@@ -167,7 +167,9 @@ public class PantallaLogin extends javax.swing.JFrame
             user.setPassword(txt_password.getText());
             if(ctrlUser.loginUser(user))
             {
-                JOptionPane.showMessageDialog(null,"Se ha iniciado sesion");
+                PantallaMenu main = new PantallaMenu();
+                main.setVisible(true);
+                this.dispose();
 
             }
             else
